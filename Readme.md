@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Полина Рылова](https://up.htmlacademy.ru/htmlcss/24/user/33745).
-* Наставник: в этот раз `Кексобот`.
+* Наставник: в этот раз [Кексобот] (https://assets.htmlacademy.ru/img/up/keksoid.svg).
 
 ---
 
