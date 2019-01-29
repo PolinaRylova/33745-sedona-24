@@ -18,6 +18,102 @@
         </ul>
       </nav>
     </header>
+    <main class="container">
+      <h1 class="visually-hidden">Отели Седоны</h1>
+      <section class="filters">
+        <form action="/echo" method="post">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <input type="checkbox" name="swimming-pool" id="check-1" checked="">
+            <label for="check-1"><i class="icon-check"></i> Бассейн</label>
+            <br>
+            <input type="checkbox" name="parking" id="check-2">
+            <label for="check-2"><i class="icon-check"></i> Парковка</label>
+            <br>
+            <input type="checkbox" name="wi-fi" id="check-3">
+            <label for="check-3"><i class="icon-check"></i> Wi-fi</label>
+          </fieldset>
+          <fieldset>
+            <legend>ТИп жилья:</legend>
+            <input type="checkbox" name="hotel" id="check-4" checked="">
+            <label for="check-4"><i class="icon-check"></i> Гостиница</label>
+            <br>
+            <input type="checkbox" name="motel" id="check-5">
+            <label for="check-5"><i class="icon-check"></i> Мотель</label>
+            <br>
+            <input type="checkbox" name="apartments" id="check-6">
+            <label for="check-6"><i class="icon-check"></i> Апартаменты</label>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+                  </div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <div class="price-controls">
+                <input class="min-price" type="text" value="0">
+                <span>–</span>
+                <input class="max-price" type="text" value="30000">
+              </div>
+            </div>
+          </fieldset>
+          <button type="submit" onclick="">Показать</button>
+        </form>
+        <span class="results-text">Найдено: </span>
+        <span class="results-num">3</span>
+        <h2 class="sorter-title">Сортировка: </h2>
+        <ul class="sorter-list">
+          <li>
+            <a href="#" class="filters__current-link">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По рейтингу</a>
+          </li>
+        </ul>
+      </section>
+      <section class="founded-hotels">
+        <ul class="founded-hotels__list">
+          <li class="founded-hotels__item">
+            <div class="founded-hotels__info">
+              <h3 class="hotel-name">Amara resort & SPA</h3>
+              <span class="hotel-type">гостиница</span>
+              <span class="hotel-price">от 4000 р.</span>
+              <a href="#" class="hotel-more">Подробнее</a>
+              <a href="#" class="hotel-buy">Забронировать</a>
+            </div>
+            <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Гостиница Amara resort & SPA">
+          </li>
+          <li class="founded-hotels__item">
+            <div class="founded-hotels__info">
+              <h3 class="hotel-name">Desert Quail Inn</h3>
+              <span class="hotel-type">Мотель</span>
+              <span class="hotel-price">от 3000 р.</span>
+              <a href="#" class="hotel-more">Подробнее</a>
+              <a href="#" class="hotel-buy">Забронировать</a>
+            </div>
+            <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+          </li>
+          <li class="founded-hotels__item">
+            <div class="founded-hotels__info">
+              <h3 class="hotel-name">Villas at Poco Diablo</h3>
+              <span class="hotel-type">Апартаменты</span>
+              <span class="hotel-price">от 2000 р.</span>
+              <a href="#" class="hotel-more">Подробнее</a>
+              <a href="#" class="hotel-buy">Забронировать</a>
+            </div>
+            <img src="img/мillas-at-poco-diablo.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+          </li>
+        </ul>
+      </section>
+    </main>
     <footer class="main-footer">
       <p class="footer__hashtag">#visitsedona</p>
       <ul class="footer__social">
