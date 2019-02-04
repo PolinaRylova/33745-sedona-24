@@ -9,7 +9,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-nav__logo">
-          <img src="img/logo.svg" width="138" height="71" alt="Логотип «Sedona»">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип «Sedona»">
         </a>
         <ul class="main-nav__site-nav">
           <li><a href="information.html">Информация</a></li>
@@ -107,23 +107,29 @@
           Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Cедоне
         </p>
-        <button class="btn form-open">Поиск гостиницы в Седоне</button>
-        <form action="/echo" method="post">
-          <label>Дата заезда:
-            <input type="date" name="checkin" value="2017-04-24">
-            <span class="calendar"></span>
-          </label>
-          <label>Дата выезда:
-            <input type="date" name="checkout" value="2017-07-04">
-            <span class="calendar"></span>
-          </label>
-          <label>Взрослые:
-            <input type="number" name="adults-num" value="2">
-          </label>
-          <label>Дети:
-            <input type="number" name="children-num" value="0">
-          </label>
-          <a class="btn btn-search" href="#">Найти</a>
+        <button class="btn form-open" type="button">Поиск гостиницы в Седоне</button>
+        <form class="hotel-search__form" action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label>Дата заезда:
+              <input type="text" name="checkin" placeholder="24 апреля 2017">
+              <span class="calendar"></span>
+            </label>
+          </p>
+          <p>
+            <label>Дата выезда:
+              <input type="text" name="checkout" placeholder="04 июля 2017">
+              <span class="calendar"></span>
+            </label>
+          </p>
+          <p>
+            <label>Взрослые:
+              <input type="number" name="adults-num" value="2">
+            </label>
+            <label>Дети:
+              <input type="number" name="children-num" value="0">
+            </label>
+          </p>
+          <button class="btn btn-search" type="submit">Найти</button>
         </form>
         <div class="hotels-map">
           <img src="img/map.jpg" width="1200" height="594" alt="Седона на карте: США, штат Аризона, индекс 86336, расположение 34°51′36″ с. ш. 111°47′21″ з. д.">
@@ -133,9 +139,9 @@
     <footer class="main-footer">
       <p class="footer__hashtag">#visitsedona</p>
       <ul class="footer__social">
-        <li><a href="#" class="social-btn">Twitter</a></li>
-        <li><a href="#" class="social-btn">Facebook</a></li>
-        <li><a href="#" class="social-btn">YouTube</a></li>
+        <li><a href="#" class="social-btn">Читать нас в Twitter</a></li>
+        <li><a href="#" class="social-btn">Следить за нашими новостями на Facebook</a></li>
+        <li><a href="#" class="social-btn">Смотреть о нас на YouTube</a></li>
       </ul>
       <p class="footer__copyright">
         Website by
