@@ -41,28 +41,6 @@
             <img src="img/town.jpg" width="800" height="401" alt="Уютные кафе на фоне гор">
           </li>
           <li class="features__item">
-            <ul class="advertisement-list">
-              <li class="advertisement-item">
-                <h3>Жильё</h3>
-                <p class="description">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                </p>
-              </li>
-              <li class="advertisement-item">
-                <h3>Еда</h3>
-                <p class="description">
-                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-                </p>
-              </li>
-              <li class="advertisement-item">
-                <h3>Сувениры</h3>
-                <p class="description">
-                  Не только китайского, но и местного производства!
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="features__item">
             <div>
               <h3>Там есть мост дьявола</h3>
               <p>- №2 -</p>
@@ -99,6 +77,28 @@
               </p>
             </div>
           </li>
+          <li class="features__item">
+            <ul class="extra-features-list">
+              <li class="extra-features-item">
+                <h3>Жильё</h3>
+                <p class="description">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
+              </li>
+              <li class="extra-features-item">
+                <h3>Еда</h3>
+                <p class="description">
+                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </p>
+              </li>
+              <li class="extra-features-item">
+                <h3>Сувениры</h3>
+                <p class="description">
+                  Не только китайского, но и местного производства!
+                </p>
+              </li>
+            </ul>
+          </li>
         </ul>
       </section>
       <section class="hotel-search">
@@ -111,25 +111,28 @@
         <form class="hotel-search__form" action="https://echo.htmlacademy.ru" method="get">
           <p>
             <label>Дата заезда:
-              <input type="text" name="checkin" placeholder="24 апреля 2017">
+              <input type="text" name="checkin" value="24 апреля 2017">
               <span class="calendar"></span>
             </label>
           </p>
           <p>
             <label>Дата выезда:
-              <input type="text" name="checkout" placeholder="04 июля 2017">
-              <span class="calendar"></span>
+              <input type="text" name="checkout" value="4 июля 2017">
+              <button type="button" class="bth btn-calendar">Выбрать в календаре</button>
             </label>
           </p>
           <p>
-            <label>Взрослые:
-              <input type="number" name="adults-num" value="2">
-            </label>
-            <label>Дети:
-              <input type="number" name="children-num" value="0">
-            </label>
+            <label for="adults-count">Взрослые:</label>
+            <button type="button" class="btn-adults-decrease">-</button>
+            <input type="text" id="adults-count" name="adults-count-field" value="2">
+            <button type="button" class="btn-adults-increase">+</button>
+
+            <label for="children-count">Дети:</label>
+            <button type="button" class="btn-children-decrease">-</button>
+            <input type="text" id="children-count" name="children-count-field" value="0">
+            <button type="button" class="btn-children-increase">+</button>
           </p>
-          <button class="btn btn-search" type="submit">Найти</button>
+          <button type="submit" class="btn btn-search">Найти</button>
         </form>
         <div class="hotels-map">
           <img src="img/map.jpg" width="1200" height="594" alt="Седона на карте: США, штат Аризона, индекс 86336, расположение 34°51′36″ с. ш. 111°47′21″ з. д.">
